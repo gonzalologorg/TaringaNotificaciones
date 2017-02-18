@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="HoloTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:logo">@android:color/transparent</item>
+    </style>
+
+</resources>

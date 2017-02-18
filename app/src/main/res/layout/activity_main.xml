@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorBackground"
+    tools:context="rgbmill.com.taringanotificaciones.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/alert_light_frame"
+                    android:id="@+id/userAvatar"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_required"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorDark"
+                    android:textSize="24sp"
+                    android:id="@+id/upView"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.6"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                app:srcCompat="@android:drawable/bottom_bar" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:weightSum="1"
+                android:alwaysDrawnWithCache="false">
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.33"
+                    app:srcCompat="@drawable/menu_reload"
+                    android:id="@+id/reload_button"
+                    android:background="@color/colorWhite"
+                    android:onClick="fetchNotifications" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@android:drawable/bottom_bar" />
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.33"
+                    app:srcCompat="@drawable/menu_settings"
+                    android:id="@+id/settings_button"
+                    android:background="@color/colorWhite"
+                    android:onClick="openSettings" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.2"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@android:drawable/bottom_bar" />
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:srcCompat="@drawable/ic_logout"
+                    android:id="@+id/logout_button"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorWhite"
+                    android:onClick="clearData" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                app:srcCompat="@android:drawable/bottom_bar"
+                android:id="@+id/imageView" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/listNotifications" />
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

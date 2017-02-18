@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Taringa Notificaciones</string>
+    <string name="title_activity_login_act">Menu principal</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">Usuario</string>
+    <string name="prompt_pass">Contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="fetch_notifications">Recargar notificaciones</string>
+    <string name="clear_data">Salir</string>
+    <string name="login_required">Bienvenido!</string>
+    <string name="error_incorrect_password">Usuario o contraseña incorrecta</string>
+    <string name="error_field_required">Este valor es necesario</string>
+
+    <string name="user_key">"user_key"</string>
+
+    <string name="notification_delay">Verificar cada: 1 minuto</string>
+    <string name="notification_on">Activar notificaciones</string>
+    <string name="notification_sound">Activar sonidos</string>
+
+    <string name="button_ok">Aceptar</string>
+</resources>

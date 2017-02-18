@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:background="@drawable/outline"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="16dp"
+
+        android:fillViewport="false"
+        android:clipToPadding="false">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/notification_delay"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorDark"
+                android:layout_height="wrap_content"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/seekBar2" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="32dp">
+
+                <TextView
+                    android:text="@string/notification_on"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorDark"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <Switch
+                    android:text="Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/switch1"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+
+                android:layout_height="32dp">
+
+                <TextView
+                    android:text="@string/notification_sound"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorDark"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <Switch
+                    android:text="Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/switch2"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:text="@string/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/accept"
+                android:onClick="goBack"
+                android:background="@drawable/buttonmain" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
